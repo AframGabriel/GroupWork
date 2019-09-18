@@ -1,0 +1,388 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Customer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+
+<style>
+    .customer-container-natnael{
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+}
+
+.custom-category-natnael{
+  float: left;
+  width: 22%;
+  height: 300px;
+  overflow: auto;
+  margin-right: 3%;
+  margin-left: 0;
+  line-height: 2,5;
+  background-color: inherit;
+  text-align: center;
+}
+
+.links-natnael{
+  width: 20%;
+  height: 300px;
+  line-height: 1,5;
+  text-decoration: none;
+  margin-top: 2%;
+  text-align: center;
+  margin-bottom: 5%;
+  overflow: auto;
+  margin:auto;
+}
+
+
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Här är css:n för den övre menyn */
+/* lägg till svart färg för top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Style:a länkarna inom navigations baren */
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Ändra färgen för länkarna på hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Lägg till färg för den aktiva, använda länken */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Här är css:n för den undre menyn */
+/* lägg till svart färg för top navigation */
+.menunav {
+    background-color: #f2f5f3;
+    overflow: hidden;
+  margin-left: 7%;
+}
+
+/* Style:a länkarna inom navigations baren */
+.menunav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Ändra färgen för länkarna på hover */
+.menunav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Lägg till färg för den aktiva, använda länken */
+.menunav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.picture{
+  float: left;
+  width: 20%;
+}
+
+.search{
+  float: right;
+  border-radius: 25px;
+  width: 220px;
+  height: 20px;
+  box-shadow: none;
+  border: 0px;
+  outline: 0;
+  padding: 6px 14px 6px 30px;
+
+}
+.sokruta{
+padding-top: 7px;
+padding-right: 20px;
+padding-left: 7%;
+}
+
+.container-footer{
+  width: 100%;
+  height: 500px;
+}
+
+.row{
+  border-top: solid black thin;
+}
+
+.col-md-4{
+  float: left;
+  vertical-align: middle;
+}
+.nyhets{
+  margin-right: 10px;
+  float: right;
+}
+
+.box-natnael , .searchbox-examples-natnael{
+  margin-left: 0;
+}
+
+
+    .nav {
+        float: left
+    }
+
+
+    .nyhets {
+        float: right;
+        padding: 5px;
+        text-decoration: none;
+        width: 250px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lightblue;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            .dropdown-content a:hover {
+                background-color: pink
+            }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+<body>
+
+    <div id="page-wrapper">
+
+        
+
+        
+        <br><br><br><br><br><br>
+        <form class="box-natnael" align="center">
+            <h1 align="center">Hjälp center</h1>
+            <input name="searchbox" placeholder="Vad behöver du hjälp med?" style="width:80%">
+            <input type="submit" value="Sök">
+        </form>
+        <br>
+        <div class="searchbox-examples-natnael" align="center">
+            T.ex. "glömt lösenord", "svart skärm" eller "felkod" <br>
+            <br>
+        </div>
+        <hr>
+        <br>
+        <div class="custom-category-natnael">
+            <h3>Lär dig mer om Contoso Movies</h3>
+            <hr>
+            <a href="url">Hur fungerar Contoso Movies? </a>  <br>
+            <a href="url">Hur fungerar Netflix?</a> <br>
+            <a href="url">Hastighetsrekommendationer för internetanslutning</a> <br>
+            <a href="url">Hur licensierar Netflix serier och filmer?</a>
+        </div>
+        <div class="custom-category-natnael">
+            <h3>Hantera mitt konto <br>  </h3>
+            <hr>
+            <a href="url">Hur avslutar jag mitt Contoso movies-abonnemang?</a> <br>
+            <a href="url">Hur kan jag kontrollera hur mycket data ContosoMovies använder?</a> <br>
+            <a href="url">Hur skapar jag ett ContosoMovies-konto åt någon annan?</a>
+        </div>
+        <div class="custom-category-natnael">
+            <h3>Använd Contoso Movies <br> </h3>
+            <hr>
+            <a href="url">Hur ställer jag in undertexter, dold text och alternativ ljud på enheter?</a>   <br>
+            <a href="url">ContosoMovies-funktioner på Panasonic-enheter</a> <br>
+            <a href="url">Hur skickar jag tillbaka en dvd- eller Blu-ray-skiva om jag tappat bort det förbetalda kuvertet?</a>
+        </div>
+        <div class="custom-category-natnael">
+            <h3>Lös problem  </h3>
+            <hr>
+            <a href="url">Varför fungerar inte ContosoMovies</a>   <br>
+            <a href="url">Hastighetsrekommendation för internetanslutning</a> <br>
+            <a href="url">Det står att mitt konto redan används när jag försöker titta på ContosoMovies.</a>
+        </div>
+        <div class="links-natnael">
+            <h3> Snabblänkar </h3>
+            <hr>
+            <a href="url">Förslå tv-serier eller filmer</a>   <br>
+            <a href="url">Uppdatera e-postadress</a> <br>
+            <a href="url">Uppdatera betalningsmetod</a> <br>
+            <a href="url">Granska betalningshistorik</a> <br>
+            <a href="url">Få hjälp med att logga in</a> <br>
+            <a href="url">Uppdatera lösenord</a> <br>
+            <a href="url">Avsluta konto</a>
+        </div>
+    </div>
+                        <!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="Home.html">Home</a></li>
+                                <li><a href="Top-list.html">Top-List</a></li>
+                                <li><a href="Custmer.html">Customer</a></li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                    <ul>
+                                        <li><a href="www.facebook.com">Facebook</a></li>
+                                        <li> <a href="#"> E-mail</a></li>
+                                        <li>
+                                            <a href="0722484877">Telefon</a>
+
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="About.html">About</a></li>
+                            </ul>
+                        </nav>
+
+
+                        <!-- Footer -->
+                        <footer id="footer" class="container">
+                            <div class="row 200%">
+                                <div class="12u">
+
+                                    <form action="#" class="nyhets">
+                                        <h4> Få vara nyhets brev:</h4>
+                                        <input type="text" name="email" placeholder="Enter your e-mail" />
+                                        <input type="Submit" class="btn btn-default" />
+                                    </form>
+                                    <!-- About -->
+                                    <section>
+
+
+                                        <ul class="nav">
+                                            <li> <a href="Home.html"> Home </a> </li>
+                                            <br>
+                                            <li> <a href="Top-list.html"> Top Lists </a> </li>
+                                            <br>
+                                            <li> <a href="Custmer.html">Customer </a> </li>
+                                            <br>
+                                            <li> <a href="About.html"> About </a> </li>
+                                            <br>
+
+                                            <div class="dropdown">
+                                                <a href="#">Contact</a>
+                                                <div class="dropdown-content">
+                                                    <li>
+
+                                                        <ul>
+                                                            <li><a href="www.facebook.com">Facebook</a></li>
+                                                            <li> <a href="#"> E-mail</a></li>
+                                                            <li>
+                                                                <a href="0722484877">Telefon</a>
+
+                                                            </li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <br>
+                                                </div>
+                                            </div>
+
+                                        </ul>
+                                    </section>
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="12u">
+
+                                    <!-- Contact -->
+                                    <section>
+                                        <h2 class="major"><span>Get in touch</span></h2>
+                                        <ul class="contact">
+                                            <li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+                                            <li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                                            <li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+                                            <li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+                                            <li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+                                        </ul>
+                                    </section>
+
+                                </div>
+                            </div>
+
+                            <!-- Copyright -->
+                            <div id="copyright">
+
+                                Copyright &copy; <a href="ContosoMovies.com">ContosoMovies.com</a>
+
+                            </div>
+
+                        </footer>
+
+                    </div>
+                    <!-- Scripts -->
+                    <script src="assets/js/jquery.min.js"></script>
+                    <script src="assets/js/jquery.dropotron.min.js"></script>
+                    <script src="assets/js/skel.min.js"></script>
+                    <script src="assets/js/skel-viewport.min.js"></script>
+                    <script src="assets/js/util.js"></script>
+                    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+                    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
